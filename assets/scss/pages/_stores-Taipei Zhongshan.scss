@@ -1,0 +1,85 @@
+.stores-branch{
+    .container{
+        padding-top: 96px;
+        padding-bottom: 80px;
+        @include mobile-larger{
+            padding-top: 80px;
+            padding-bottom: 80px; 
+        }
+        @include mobile{
+            padding-top: 40px;
+            padding-bottom: 64px; 
+        }
+    }
+    h2{
+        padding-left: 16px;
+        border-left: 5px solid #9F1213;
+        margin-bottom: 32px;
+        @include mobile{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    .stores-branch-choose{
+        max-width: 100%;
+        form{
+            width: 33.33333%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            margin-bottom: 40px;
+            .branch{
+                width: 75%;
+            }
+            @include mobile-larger{
+                width: 60%;
+            }
+        }
+        .branch-info{
+            width:41.66666%;
+            .branch-text{
+                width: 100%;
+                h4{
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 24px;
+                    font-weight: 400;
+                    border: 1px solid #00000020;
+                }
+                .branch-text-bottom{
+                    padding:16px 24px;
+                    gap: 8px;
+                    border: 1px solid #00000020;
+                .area-phone,.area-time,.area-address{
+            gap:11px;
+        }
+                .area-address {
+            display: flex;
+            max-width: 100%;
+            align-items: flex-start;
+            flex-wrap: nowrap;/* 确保内容不换行 */
+        }
+                h5 {
+            display: inline;
+            a{
+                color:#212529; 
+                display: inline;
+            } 
+        }
+                }
+            }
+            @include mobile-larger{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 24px;
+            }
+        }
+        .map{
+            display: inline;
+            vertical-align: middle;
+        }
+    }
+    
+}

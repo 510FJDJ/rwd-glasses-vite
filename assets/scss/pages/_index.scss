@@ -1,0 +1,228 @@
+.footer{
+    background-color:$primary;
+}
+.header{
+    background-color: $primary;
+    padding: 16px 0;
+    transition: all 0.3s ease;
+    li a:hover{
+        color:#000000
+    }
+}
+.header img{
+    width:80px;
+    padding: 12px 0px;
+}
+
+/* 主要主題 */
+.banner{
+    background-image: url(../images/home-header.png);
+    background-size: cover;
+    background-position: left;
+    height: calc(100vh - 80px);
+}
+.banner-text{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: $secondary;
+}
+.intro{
+    h2,h4{
+        color: $secondary;
+    }
+    p{
+        color: #000000;
+    }
+}
+.intro-list-img{
+    width: 83px;
+    padding-bottom: 24px;
+}
+.famous{
+    background-image: url(../images/index-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.famous-list{
+    width: 100%;
+}
+.product{
+    h2{
+        color: $secondary;
+    }
+    .color-pr{
+        color: $primary;
+    }
+}
+.card{
+    width: 50%;     
+}
+.card-img-double{
+    background-image: url(../images/home-section4-1.png);
+    background-size: cover;
+    background-position: center;
+    height:240px;
+}
+.card-img-youth{
+    background-image: url(../images/home-section4-2.png);
+    background-size: cover;
+    background-position: center;
+    height:240px;
+}
+.custumer{
+    h2{
+        color: $secondary;
+    }
+}
+.custumer img{
+    width: 100%;
+}
+.customer-list{
+    width: 25.4444%;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius:4px;
+}
+.custmer-text{
+    padding: 16px;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 0px 0px 6px 6px;
+    border: 1px solid #DEE2E6;
+    display: flex;
+    flex-direction: column;
+    height: 205px;
+}
+.contact{
+    background-color: #FBF2F2;
+    h2{
+        color: $secondary;
+    }
+}
+  
+/* rwd */
+@media (max-width:992px){
+    .col-mb-12{
+        width: 80%;
+    }
+}
+@media (max-width:767px){
+    .container{
+        max-width: 720px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .col-10{
+        width:83.33333%;
+    }
+    .col-12{
+        width: 100%;
+    }
+    .mb-col-6{
+        max-width:50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .product-img{
+        width: 336px;
+        display: block;
+        margin: 0 auto;
+    }
+    .famous-list{
+        flex-direction: column;
+        gap:24px;
+    }
+    .card{
+        width: 100%;     
+    }
+    .customer-list{
+        width: 51.6666%;
+    }
+    .btn-sure{
+        width:336px;
+        padding: 16px 136px;
+    }
+}
+@media (max-width:576px){
+    .container{
+        max-width: 372px;
+    }
+    .header>.container{
+        flex-direction: column;
+        align-items: start;
+        max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    .nav{
+        width: 100%;
+    }
+    .nav ul li{
+       width: 50%;
+    }
+    .nav ul li a{
+        display: flex;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 0;
+        border: 1px solid white;
+    }
+    .banner{
+        background-image: url(../images/home-header-sm.png);
+}
+    .sm-p{
+    font-size: 16px;
+}
+    .sm-h4{
+    font-size: 24px;
+}
+    .intro>.container,.banner>.container{
+    max-width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+    .sm-h5{
+    font-size: 20px;
+} 
+    .card-img-double{
+    background-image: url(../images/home-section4-1-sm.png);
+}
+    .card-img-youth{
+    background-image: url(../images/home-section4-2-sm.png);
+}
+    .customer-list{
+    width: 107%;
+}
+    .gap-3{
+    gap:16px;
+}
+    .btn-sure{
+    width: 100%;
+    padding: 16px 142px;
+}
+    .footer-top-right ul{
+    display: none;
+}
+    .footer-top-right h3{
+    font-size: 16px;
+}
+    .gap-20{
+    gap:11px;
+}
+    .ml-2{
+    margin-left: 8px;
+}
+    .my-16{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+    .footer-bottom-right{
+    display: block;
+}
+    .w-3{
+    width: 24px;
+}
+}
